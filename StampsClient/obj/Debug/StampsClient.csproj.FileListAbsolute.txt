@@ -1,0 +1,11 @@
+C:\Users\Sergei\source\repos\StampsClient\bin\Debug\StampsClient.exe.config
+C:\Users\Sergei\source\repos\StampsClient\bin\Debug\StampsClient.exe
+C:\Users\Sergei\source\repos\StampsClient\bin\Debug\StampsClient.pdb
+C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.Properties.Resources.resources
+C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.csproj.GenerateResource.cache
+C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.csproj.CoreCompileInputs.cache
+C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.exe
+C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.pdb
+C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.MainAppWindow.resources
+C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.DataBaseView.resources
+C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.StampsInterfaceView.resources
