@@ -9,3 +9,4 @@ C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.pdb
 C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.MainAppWindow.resources
 C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.DataBaseView.resources
 C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.StampsInterfaceView.resources
+C:\Users\Sergei\source\repos\StampsClient\obj\Debug\StampsClient.csproj.AssemblyReference.cache

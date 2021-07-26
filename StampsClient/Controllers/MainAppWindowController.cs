@@ -16,7 +16,11 @@ namespace StampsClient
     object _myLock;
 
     SCI.IStampsClientAppView _appView;
+
+    // TODO: StampsViewController
     SCI.IStampsInterfaceView _stampsInterfaceView;
+
+    SCI.IDatabaseViewController _databaseViewController;
     SCI.IDataBaseView _databaseView;
     
     SCI.IStampsClientModel _stampsModel;
@@ -26,16 +30,19 @@ namespace StampsClient
     #endregion
 
     #region Private Methods
+
     private void DatabaseViewButtonClicked(object sender, System.EventArgs e)
     {
       FORMS.UserControl dbView = _databaseView.GetViewObject();
       _appView.SetActiveView(dbView);
     }
+
     private void StampsDotComViewButtonClicked(object sender, System.EventArgs e)
     {
       FORMS.UserControl stampsDotComView = _stampsInterfaceView.GetViewObject();
       _appView.SetActiveView(stampsDotComView);
     }
+
     #endregion
 
     #region Constructors
@@ -43,6 +50,10 @@ namespace StampsClient
     public MainAppWindowController()
     {
       _myLock = new object();
+      _databaseViewController = StampsClientFactory.CreateDatabaseViewController();
+      _stampsModel = StampsClientFactory.CreateStampsClientModel();
+      _databaseViewController.SetModel(_stampsModel.DatabaseData);
+      //TODO: StampsClientViewController
     }
 
     #endregion
@@ -77,6 +88,7 @@ namespace StampsClient
       lock (_myLock)
       {
         _stampsInterfaceView = stampsInterfaceView;
+        // TODO: Stamps controller
       }
     }
 
@@ -91,6 +103,7 @@ namespace StampsClient
       lock (_myLock)
       {
         _databaseView = databaseView;
+        _databaseViewController.ConnectToView(_databaseView);
       }
     }
 
@@ -105,6 +118,8 @@ namespace StampsClient
       lock (_myLock)
       {
         _stampsModel = model;
+        _databaseViewController.SetModel(_stampsModel.DatabaseData);
+        // TODO stamps interface model
       }
     }
 

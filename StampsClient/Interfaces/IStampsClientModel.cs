@@ -8,5 +8,6 @@ namespace StampsClient.Interfaces
 {
     public interface IStampsClientModel
     {
+      IDatabaseModel DatabaseData { get; set; }
     }
 }
